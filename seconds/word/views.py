@@ -29,6 +29,19 @@ class WordViewSet(viewsets.ModelViewSet):
         Word.objects.filter(word=serializer.validated_data['word']).delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
+    @action(detail=False, methods=['get'])
+    def statistics(self, request, *args, **kwargs):
+        qs = Word.objects.all()
+        statistics_dict = {
+            'total_words_count': qs.count(),
+            'easy_words_count': qs.filter(difficulty=1).count(),
+            'medium_words_count': qs.filter(difficulty=2).count(),
+            'hard_words_count': qs.filter(difficulty=3).count(),
+            'words_added_by_you': qs.filter(added_by=request.user.username).count(),
+            'optional_words_count': OptionalWord.objects.count()
+        }
+        return Response(statistics_dict, status=status.HTTP_200_OK)
+
 
 class OptionalWordViewSet(ReadOnlyModelViewSet):
     permission_classes = (IsAdminUser, )
