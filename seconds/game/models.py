@@ -57,6 +57,9 @@ class Team(models.Model):
     currently_playing = models.BooleanField(default=False)
     score = models.IntegerField(default=0)
 
+    class Meta:
+        ordering = ['-score']
+
     def start_turn(self):
         # Switch the active player
         try:
