@@ -1,0 +1,7 @@
+Django>=2.0,<2.1
+psycopg2
+djangorestframework
+markdown
+django-filter
+django-oauth-toolkit
+django-cors-headers

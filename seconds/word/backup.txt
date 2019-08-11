@@ -1,0 +1,985 @@
+1;Middeleeuwen;Thijs
+3;Kandij;Thijs
+1;Heerenveen;Thijs
+1;Parijs;Thijs
+3;Burgerschap;Thijs
+2;Ho Chi Minhstad;Thijs
+1;Zolder;Thijs
+3;Marie Curie;Thijs
+3;Vlaardingen;Thijs
+3;Meikever;Thijs
+2;Binnenzee;Thijs
+1;Oliebol;Thijs
+1;Schiermonnikoog;Thijs
+1;Jus;Thijs
+2;Economie;Thijs
+2;Kruisbes;Thijs
+2;Europa;Thijs
+2;Buren;Thijs
+3;Ede;Thijs
+3;Castricum;Thijs
+2;Zwitserland;Thijs
+3;Ierse Zee;Thijs
+1;Kanker;Thijs
+3;Breukelen;Thijs
+2;Celsius;Thijs
+1;Brandnetel;Thijs
+3;Zaltbommel;Thijs
+1;Rijn;Thijs
+2;West-Afrika;Thijs
+2;Urk;Thijs
+1;1 april;Thijs
+3;Zuid-Soedan;Thijs
+3;Stoof;Thijs
+2;Carbidschieten;Thijs
+2;Pakistan;Thijs
+2;Amstelveen;Thijs
+1;Haren;Thijs
+1;Farao;Thijs
+1;Aardbeving;Thijs
+3;Barneveld;Thijs
+2;Jenever;Thijs
+3;Kuinre;Thijs
+3;Zanglijster;Thijs
+1;Dierenrijk;Thijs
+1;Kous;Thijs
+2;Kampereiland;Thijs
+2;Balk;Thijs
+2;Sociale wetenschappen;Thijs
+1;Hamburg;Thijs
+2;Distels;Thijs
+1;Banjo;Thijs
+1;November;Thijs
+1;Nijmegen;Thijs
+2;Ganzen;Thijs
+1;Woestijn;Thijs
+2;Harry Mulisch;Thijs
+1;Dal;Thijs
+1;Egypte;Thijs
+3;Regeringsvorm;Thijs
+2;Wolvega;Thijs
+2;Driesprong;Thijs
+2;Ukelele;Thijs
+2;James Watt;Thijs
+1;Herfst;Thijs
+1;Tekening;Thijs
+2;Lenteklokje;Thijs
+2;MS-DOS;Thijs
+2;Tripoli;Thijs
+1;Schaatsen;Thijs
+1;Leeuwarden;Thijs
+2;Toulouse;Thijs
+3;Saint Petersburg;Thijs
+1;Sc Heerenveen;Thijs
+3;Baret;Thijs
+2;Zwarte Water;Thijs
+2;Wim Kan;Thijs
+1;Ooievaar;Thijs
+1;Will Smith;Thijs
+1;Arsenal FC;Thijs
+1;Terreur;Thijs
+1;Ham;Thijs
+2;Google Earth;Thijs
+2;Awakenings;Thijs
+2;Baron;Thijs
+2;Eurovisiesongfestival;Thijs
+3;Middelpuntzoekende kracht;Thijs
+3;Lauryn Hill;Thijs
+1;Lot;Thijs
+2;Frans-Duitse Oorlog;Thijs
+1;Bloedneus;Thijs
+2;Whopper;Thijs
+2;Oppositie;Thijs
+1;Urn;Thijs
+3;Blinde vink;Thijs
+2;Borstverkleining;Thijs
+2;Bisdom;Thijs
+2;Kruistocht in spijkerbroek;Thijs
+1;Texas;Thijs
+2;Koffiemolen;Thijs
+1;Friesland;Thijs
+2;Hypothese;Thijs
+2;Watt;Thijs
+2;Driebergen;Thijs
+3;Waterboarding;Thijs
+2;Zeezout;Thijs
+2;Straattheater;Thijs
+2;Futurama;Thijs
+2;Marshall;Thijs
+1;Kings of Leon;Thijs
+2;Schets;Thijs
+1;Kinderdag;Thijs
+3;From Russia with Love;Thijs
+1;Katapult;Thijs
+1;Muziek;Thijs
+2;Blackjack;Thijs
+3;Hobo;Thijs
+3;Within Temptation;Thijs
+2;Surrealisme;Thijs
+3;Han-dynastie;Thijs
+3;Robinson Crusoe;Thijs
+2;Webpagina;Thijs
+1;Veer;Thijs
+1;Pantoffel;Thijs
+2;Euthanasie;Thijs
+2;Black Christmas;Thijs
+1;Gitaar;Thijs
+2;Grote Oceaan;Thijs
+1;Straal;Thijs
+2;Waanstoornis;Thijs
+2;Clocks;Thijs
+2;Waterplant;Thijs
+2;Strafrecht;Thijs
+2;Waterman;Thijs
+1;Skibril;Thijs
+2;Grote Volksverhuizing;Thijs
+2;Oxford;Thijs
+1;Menstruatie;Thijs
+1;Buik;Thijs
+1;Kaviaar;Thijs
+2;Patrick Kluivert;Thijs
+2;Verbrandingsmotor;Thijs
+1;Gezin;Thijs
+2;Nederzetting;Thijs
+2;Stelling van Pythagoras;Thijs
+3;Minerva Anderling;Thijs
+2;Steward;Thijs
+3;Maurits van Oranje;Thijs
+2;Klootschieten;Thijs
+2;Blokzijl;Thijs
+1;Pink;Thijs
+2;Cacaoboter;Thijs
+1;Nieuw-Zeeland;Thijs
+1;Eeuw;Thijs
+1;Titanic;Thijs
+2;Blauwe gaai;Thijs
+1;Boekenkast;Thijs
+1;Aambei;Thijs
+2;Merel;Thijs
+1;Uranus;Thijs
+2;Minerva;Thijs
+2;Gember;Thijs
+3;Ubuntu;Thijs
+2;Hop;Thijs
+2;Centraal-Europa;Thijs
+3;Jeneverbes;Thijs
+2;Gotisch;Thijs
+1;Punaise;Thijs
+1;4 mei;Thijs
+2;Encyclopedie;Thijs
+1;Huppel;Thijs
+1;Eiffeltoren;Thijs
+2;Praag;Thijs
+1;Rijbewijs;Thijs
+2;Middelburg;Thijs
+3;Oostvaardersplassen;Thijs
+2;Zwolle;Thijs
+1;Japan;Thijs
+1;Justin Bieber;Thijs
+2;Heracles Almelo;Thijs
+1;Dijk;Thijs
+1;Klomp;Thijs
+2;IJsberen;Thijs
+1;Drenthe;Thijs
+1;Chili;Thijs
+1;Mars;Thijs
+2;Snijboon;Thijs
+2;Litouwen;Thijs
+2;Homoseksualiteit;Thijs
+1;Sneek;Thijs
+2;Vietnam;Thijs
+2;Katowice;Thijs
+2;Palestina;Thijs
+3;Gemeenteraad;Thijs
+1;Nederlandse Antillen;Thijs
+2;Limiet;Thijs
+3;Wannabe;Thijs
+2;Vacht;Thijs
+2;Gewei;Thijs
+1;Varken;Thijs
+2;Onkruid;Thijs
+2;Sparta Rotterdam;Thijs
+3;Notenkraker;Thijs
+3;Draaiorgel;Thijs
+3;Vaderlandsliefde;Thijs
+2;Tandvlees;Thijs
+2;Cyprus;Thijs
+1;Schaamte;Thijs
+3;Goudkoorts;Thijs
+3;Jupiter;Thijs
+1;Apartheid;Thijs
+2;Toezichthouder;Thijs
+1;Stier;Thijs
+1;Sieraad;Thijs
+3;Realityserie;Thijs
+2;Regio;Thijs
+3;Rechtsstaat;Thijs
+2;Luchtgeweer;Thijs
+3;Protectoraat;Thijs
+3;Pendulum;Thijs
+2; Jurassic Park;Thijs
+2;Wei;Thijs
+3;Sphynx;Thijs
+1;Pissebedden;Thijs
+2;Lavendel;Thijs
+3;Lagedrukgebied;Thijs
+3;Achterdeurtje;Thijs
+2;Katrina;Thijs
+2;Filter;Thijs
+2;Katrol;Thijs
+1;Sluier;Thijs
+2;Zonne-energie;Thijs
+1;Warschau;Thijs
+1;Jackass;Thijs
+2;Kerkuil;Thijs
+2;Griekenland;Thijs
+2;Schaal;Thijs
+2;DreamWorks;Thijs
+1;Azijn;Thijs
+1;Vierkante meter;Thijs
+1;Opera;Thijs
+3;Mineraal;Thijs
+3;Polsstokhoogspringen;Thijs
+3;Mercedes-Benz B-Klasse;Thijs
+1;Vinger;Thijs
+2;Jan Janssen;Thijs
+2;Canadese dollar;Thijs
+1;Steek;Thijs
+2;Voice-over;Thijs
+1;Trouw;Thijs
+2;Call of Duty;Thijs
+2;Frank Sinatra;Thijs
+2;Slowakije;Thijs
+2;Charles Darwin;Thijs
+1;Winterslaap;Thijs
+2;Frank Rijkaard;root
+1;Adidas;root
+1;Nike;root
+1;Buffet;Thijs
+1;Hertog Jan;root
+2;Achterhoek;root
+2;Nicolas Sarkozy;root
+2;Tijm;root
+1;Douche;root
+2;Knoop;root
+2;Zeilen;root
+2;Koper;root
+3;Gokautomaat;root
+3;Marionet;root
+3;Hitman;root
+1;Hoed;root
+3;Easter egg;root
+1;Huis;root
+2;Holland;root
+3;Tandpasta;root
+3;Thermostaat;root
+3;Thirty Seconds to Mars;root
+1;Mayonaise;root
+2;Hamsters;root
+3;The Rock;root
+2;Reykjavik;root
+1;Website;root
+1;Osama bin Laden;root
+3;How to Train Your Dragon;root
+1;Beat It;root
+3;Cluster;root
+2;Nintendo GameCube;root
+2;Boeing;root
+2;IJsselmeer;root
+2;Slipper;root
+2;Senaat;root
+2;Tandwiel;root
+2;Oscar;root
+1;Spin;root
+3;Pussy Riot;root
+3;Heilige Geest;root
+2;Orlando Bloom;root
+3;Napels;root
+2;Ice Cube;root
+3;Maori;root
+3;Gietijzer;root
+1;Bril;Ewout
+2;Sandwich;Ewout
+1;Vijver;Ewout
+2;Muse;root
+2;Polis;Ewout
+2;Omelet;Ewout
+2;Barca;Ewout
+2;Fakkel;Ewout
+2;Trojaans paard;Ewout
+2;Rotje;Ewout
+2;Woordenschat;Ewout
+2;Stamcel;Ewout
+2;Mozilla Firefox;Ewout
+3;Oxide;Ewout
+2;Krekels;Ewout
+2;Portret;Ewout
+2;Noordpoolgebied;Ewout
+2;Witte Huis;Ewout
+2;Bluetooth;Ewout
+2;Onderzeeboot;Ewout
+1;Tand;Ewout
+2;Electronic Arts;Ewout
+2;Windturbine;Ewout
+2;Fitness;Ewout
+2;Cabaret;Ewout
+2;Groenland;Ewout
+1;Pan;Ewout
+2;Backstreet Boys;Ewout
+2;Weerstand;Ewout
+2;Programmeren;Ewout
+2;Animatie;Ewout
+2;Achilles;Ewout
+1;Utrecht;Ewout
+1;Lepel;Ewout
+1;Gewicht;Ewout
+1;Alfa;Ewout
+1;Muzikant;Ewout
+1;Getal;Ewout
+3;Troje;Ewout
+2;Ram;Ewout
+1;Donald Trump;Ewout
+1;Rechter;Ewout
+1;Verjaardag;Ewout
+1;Lionel Messi;Ewout
+1;Gemeente;Ewout
+1;Tweelingen;Ewout
+2;Noedels;Ewout
+2;Karaat;Ewout
+1;Hemelvaartsdag;Ewout
+1;Madonna;Ewout
+2;Nickelback;Ewout
+1;Michelle Obama;Ewout
+1;T-shirt;Ewout
+3;Inductie;Ewout
+2;Waterval;root
+1;Maan;root
+3;Calcium;root
+1;Libido;root
+1;Google;root
+2;Theater;root
+3;Adriatische Zee;root
+1;Alcohol;root
+2;Cello;root
+3;FC Schalke 04;root
+2;Dialect;root
+2;Big Ben;root
+3;Dinamo Moskou;root
+3;Inception;root
+3;Boogschutter;root
+2;FC Twente;root
+1;Albert Einstein;root
+1;PlayStation 4;root
+3;Koeweit;root
+2;Rotterdam;root
+2;Weerwolf;root
+1;Slang;root
+2;Miley Cyrus;root
+3;Kimono;root
+1;Euro;root
+2;Ferrari;root
+2;Locomotief;root
+2;Hulk;root
+2;Nijl;root
+3;Counter-Strike;root
+1;Tabak;root
+3;Pablo Picasso;root
+1;Londen;root
+2;Gandalf;root
+1;Baksteen;root
+3;Rafael van der Vaart;root
+1;Scheenbeen;root
+2;Pensioen;root
+1;Playboy;root
+1;Mario;root
+3;Bart Simpson;root
+3;Sharia;root
+3;Kilimanjaro;root
+1;Koude Oorlog;root
+3;Ark van Noach;root
+1;Laptop;root
+2;Lelystad;root
+1;Gloeilamp;root
+1;Friet;root
+1;Robbie Williams;root
+3;Aretha Franklin;root
+2;Belasting;root
+2;Pink Floyd;root
+3;Selderij;root
+2;Antwerpen;root
+2;Pudding;root
+2;Algebra;root
+1;Donald Duck;root
+1;Vuur;root
+2;Dirk Kuijt;root
+2;Volt;root
+1;Draak;root
+2;Pijl;root
+2;Lijn;root
+3;Boeddhisme;root
+2;Fastfood;root
+3;Napoleon Bonaparte;root
+2;Paris Saint-Germain;root
+2;Ruhrgebied;root
+3;Bonsai;root
+2;Magneet;root
+2;Pussycat Dolls;root
+2;Scientology;root
+3;Air France;root
+3;Star Trek;root
+3;Panamakanaal;root
+3;Mali;root
+3;Oostblok;root
+2;Sfinx;root
+2;Google Chrome;root
+2;Venus;root
+3;Teheran;root
+2;Rembrandt van Rijn;root
+1;Windmolen;root
+3;Diego Costa;root
+2;Liverpool FC;root
+1;Jay Z;root
+3;Hyperbool;root
+1;Sneeuw;root
+3;San Diego;root
+1;Vloek;root
+2;Himalaya;root
+3;Dell;root
+2;Haven;root
+2;Synchroonzwemmen;root
+3;Latijns-Amerika;root
+2;Meel;root
+2;Woodstock;
+2;Disney Channel;
+2;Cuba;
+1;Hond;
+2;Kaneel;
+2;Sigaar;
+3;Bangladesh;
+3;Soul;
+3;Termieten;
+3;Alan Turing;
+1;Audi;
+3;The Bronx;
+2;Avatar;
+1;Rock;
+3;Hiroshima;
+3;Venezuela;
+3;Reuzenpanda;
+2;Creditcard;
+1;Barack Obama;
+3;Vuursteen;
+2;Overhemd;
+1;Aids;
+2;Polen;
+1;Lucifer;
+1;Vaderdag;
+3;Mozambique;
+3;Taj Mahal;
+3;Apple Macintosh;
+3;Normale verdeling;
+1;Provincie;
+3;Braille;
+2;Amy Winehouse;
+2;Harp;
+3;Melbourne;
+3;Manchester;
+3;Lana Del Rey;
+3;El Paso;
+3;Elijah Wood;
+1;Dollar;
+3;Zoutzuur;
+3;Beringzee;
+2;IJshockey;
+2;Frozen;
+2;Karamel;
+2;Phil Collins;
+1;Middelvinger;
+2;Mercedes-Benz;
+3;Hopliet;
+2;Liechtenstein;
+2;Meloen;root
+1;Vork;root
+2;Ambulance;root
+3;The Who;root
+1;Raket;root
+3;Schizofrenie;root
+2;Windows Phone;root
+2;Kerstboom;root
+1;Ring;root
+2;Paardenbloem;root
+2;Rozen;root
+1;Stoomboot;root
+2;Toyota;root
+3;Muzieknoot;root
+2;Doodstraf;root
+3;Bladluizen;root
+3;Old Trafford;root
+2;Winnie de Poeh;root
+1;Neus;root
+2;The Black Eyed Peas;root
+1;Thee;root
+3;Papyrus;root
+1;Leeuw;root
+2;Louvre;root
+3;Fidel Castro;root
+2;Safari;root
+3;Davidster;root
+1;Frankrijk;root
+3;Rimini;root
+2;Joe Cocker;root
+2;Socialisme;root
+2;Miss World;root
+2;Renault;root
+1;Rubber;root
+1;Piramide;root
+2;Vogelbekdier;root
+2;Cider;root
+3;Fergie;root
+2;Centimeter;root
+1;Limburg;root
+2;Kanye West;root
+3;Michael Schumacher;root
+3;Bauhaus;root
+1;Liter;root
+2;Zweden;root
+1;Boter;root
+3;Vancouver;root
+3;Florence;root
+2;Duitse herder;root
+3;Touwtrekken;root
+3;Triatlon;root
+2;Stress;root
+2;New Orleans;root
+3;Lance Armstrong;root
+3;Colorado;root
+2;Maroon 5;root
+1;Wortel;root
+3;Boekarest;root
+1;Schaar;root
+2;PSY;root
+3;Moesson;root
+2;Alaska;root
+3;The Guardian;root
+1;Kaas;root
+2;Ploeg;root
+3;Basalt;root
+1;Driehoek;root
+2;IJsland;root
+3;Keizersnede;root
+3;Chihuahua;root
+2;The Simpsons;root
+1;Olympische Spelen;root
+3;Columbia;root
+2;Ringo Starr;root
+3;Jean-Paul Sartre;root
+2;Bohemian Rhapsody;root
+2;Rafael Nadal;root
+2;Zeus;root
+3;Makreel;root
+3;Vietcong;root
+2;Koolstofdioxide;root
+1;Las Vegas;root
+3;Fluor;root
+2;Olijfolie;root
+3;Marge Simpson;root
+2;Duits;root
+3;Bashar al-Assad;root
+2;Peter Pan;root
+2;Ryanair;root
+2;Jozef Stalin;root
+2;Teletubbies;root
+2;Loch Ness;root
+3;Marrakesh;root
+1;Moskee;root
+2;Helium;root
+1;Limoen;root
+3;Puerto Rico;root
+3;Malala Yousafzai;root
+3;Paraguay;root
+3;Slayer;root
+2;Duin;root
+1;Klok;root
+1;Wijn;root
+3;Valentino Rossi;root
+1;Yoga;root
+2;Strafschop;root
+2;Taylor Swift;root
+1;Wikipedia;root
+2;Kelly Clarkson;root
+2;Sneeuwwitje;root
+2;Bron;root
+2;Spam;root
+2;Kapitalisme;root
+2;Mandarijn;root
+3;Agave;root
+3;Sergio Ramos;root
+2;Ron Wemel;root
+2;Zeis;root
+3;Alcatraz;root
+1;Bijbel;root
+3;Seattle;root
+1;Muis;root
+3;Bruce Lee;root
+3;Trol;root
+2;Mercurius;root
+2;Zwembad;root
+1;Schoen;root
+2;Thermometer;root
+2;Mariah Carey;root
+3;Stalactiet;root
+2;Satan;root
+3;Manhattan;root
+1;Citroen;root
+2;Kabel;root
+2;Antenne;root
+2;Massage;root
+2;Feminisme;root
+3;Voltaire;root
+2;Tien geboden;root
+2;Berbers;root
+2;Opium;root
+2;Al Jazeera;root
+2;Amnesty International;root
+2;Forrest Gump;root
+2;Nieuwe Testament;root
+1;IJs;root
+3;Gulden snede;root
+2;Hagel;root
+2;Ankara;root
+3;Cholesterol;root
+1;YouTube;root
+2;Cassave;root
+2;Sirene;root
+1;Shampoo;root
+1;Mes;root
+2;Mais;root
+3;Impressionisme;root
+3;Kwik;root
+2;Madrid;root
+2;Trombone;root
+1;Carnaval;root
+3;Shenzhen;root
+2;Fanta;root
+2;Auschwitz;root
+3;Transistor;root
+3;Oliver Twist;root
+3;Walhalla;root
+2;Washington;root
+2;Hagedis;root
+2;Brooklyn;root
+1;Zon;root
+3;Laos;root
+3;Hitlerjugend;root
+3;Tower Bridge;root
+2;Echo;root
+2;Sleutel;root
+1;Harry Potter;root
+2;Anime;root
+1;Rechts;root
+3;Dwergplaneet;root
+3;The Cranberries;root
+3;Ivoorkust;root
+2;Zwaan;root
+2;Medeklinker;root
+2;Hillary Clinton;root
+2;Jamaica;root
+2;Middenrif;root
+2;R.E.M.;root
+2;Mus;root
+2;Akon;root
+1;Michael Jackson;root
+3;Gestapo;root
+2;Marokko;root
+3;Frankfurt;root
+1;Molen;root
+3;Concorde;root
+1;Wolf;root
+3;Roland Garros;root
+3;Kungfu;root
+2;Absint;root
+2;Karate;root
+2;Apostrof;root
+3;Odysseus;root
+3;Roald Dahl;root
+2;Paradox;root
+2;Modder;root
+2;Wi-Fi;root
+3;Jakhalzen;root
+1;Chocolade;root
+2;Megabyte;root
+1;Queen;root
+2;Neil Armstrong;root
+1;South Park;root
+2;Seine;root
+2;Trommelvlies;root
+2;American football;root
+1;Giraffe;root
+1;Mummie;root
+3;Anemoon;root
+2;Faculteit;root
+3;Piet Mondriaan;root
+3;Santiago;root
+2;Ekster;root
+1;Kompas;root
+2;Tandenborstel;root
+1;Hunebed;root
+2;George Clooney;root
+3;Minaret;root
+3;Dzjengis Khan;root
+2;Kamikaze;root
+2;Oerwoud;root
+1;PSV;root
+3;Popart;root
+2;Karl Marx;root
+3;Sarah Palin;root
+3;Dan Brown;root
+2;UEFA;root
+3;Magnesium;root
+2;Milaan;root
+2;Skyfall;root
+3;Tupac Shakur;root
+2;Android;root
+2;Benzine;root
+2;Synaps;root
+1;Casino;root
+1;Bibliotheek;root
+3;Boko Haram;root
+1;Leer;root
+2;Schorpioen;root
+2;Midden-Oosten;root
+2;Pixel;root
+2;Starbucks;root
+1;Zeemeermin;root
+3;Harvard-universiteit;root
+1;Valentijnsdag;root
+3;Clint Eastwood;root
+3;Carlos Santana;root
+3;Cognac;root
+2;Ariana Grande;root
+2;Elf;root
+3;Costa Rica;root
+2;Paling;root
+3;Mazda;root
+2;Tuba;root
+1;Musical;root
+2;Tram;root
+2;Foo Fighters;root
+3;Lacrosse;root
+2;Formule 1;root
+3;Steve Irwin;root
+2;Kauwgom;root
+2;Ansjovis;root
+2;Munt;root
+2;Krijt;root
+3;Jessie J;root
+2;The Terminator;root
+3;3G;root
+2;Groningen;root
+2;Schop;root
+3;Kristallnacht;root
+2;Webcam;Jasper
+3;Toendra;Jasper
+3;Meervoud;Jasper
+1;Schild;Jasper
+3;William Shakespeare;Jasper
+1;Haar;Jasper
+3;Bitcoin;Jasper
+2;Enschede;root
+2;Rozijn;root
+3;Ottomaanse Rijk;root
+1;Aardbei;root
+2;Orka;root
+1;Handgranaat;root
+2;Lady Gaga;root
+2;Doping;root
+2;Decibel;root
+2;Dobbelsteen;root
+3;San Francisco;root
+3;Barbra Streisand;root
+2;David Bowie;root
+1;Doolhof;root
+2;Coldplay;root
+3;Kappertje;root
+2;Kamasutra;root
+3;Ibrahim Afellay;root
+1;Trein;root
+2;Beuk;root
+2;Zeekoeien;root
+2;Bing;root
+2;Christina Aguilera;root
+2;Poker;root
+2;Walnoot;root
+1;Lijm;root
+3;Hannah Montana;root
+1;Sint-Maarten;root
+3;Coco Chanel;root
+2;Klaas-Jan Huntelaar;root
+2;Latijn;root
+2;Ananas;root
+1;Schaap;root
+3;Megan Fox;root
+2;Punk;root
+2;Colosseum;root
+1;Pion;root
+3;Sjalot;root
+2;Kano;root
+3;Zwavel;root
+3;Soennisme;root
+2;Bambi;root
+1;Kas;root
+1;Feyenoord;root
+1;Zombie;root
+2;Inflatie;root
+2;Matrix;root
+2;Superman;root
+1;Mount Everest;root
+3;Koolhydraat;root
+2;Oslo;root
+1;KFC;root
+2;Greenpeace;root
+2;Antarctica;root
+2;Ballet;root
+3;Roestvast staal;root
+2;Karma;root
+2;Dublin;root
+3;Musket;root
+2;Hamas;root
+2;Officier;root
+3;Julian Assange;root
+1;FC Barcelona;root
+2;Volleybal;root
+2;Singapore;root
+2;IJzer;root
+3;Hardrock;root
+3;Cavalerie;root
+2;Fjord;root
+1;Rugby;Jasper
+3;Rationaal getal;Jasper
+2;Vodka;Jasper
+1;Hercules;Jasper
+2;Slijmvlies;Jasper
+2;Turkije;Jasper
+1;Peking;Jasper
+3;Odyssee;Jasper
+2;Bamboe;Jasper
+1;Stockholm;Jasper
+2;Zeep;Jasper
+3;Pi;Jasper
+2;Weber;Jasper
+1;Traan;Jasper
+2;Kinetische energie;Jasper
+3;Bon Jovi;Jasper
+3;Willemstad;Jasper
+2;Internet;Jasper
+2;Interstellar;Jasper
+2;Adrenaline;Jasper
+3;Ethaan;Jasper
+1;Roger Federer;Jasper
+3;Relativiteitstheorie;Jasper
+1;J.R.R. Tolkien;Jasper
+3;Romeinse cijfers;Jasper
+2;Spaanse Armada;Jasper
+1;Kernwapen;Jasper
+3;Paralympische Spelen;root
+2;Squash;root
+1;Tapijt;root
+1;Tatoeage;root
+1;Mist;root
+3;Campania;root
+2;Iran;root
+3;Sjiisme;root
+1;Boormachine;root
+1;Wolkenkrabber;root
+2;Kernfusie;root
+2;Cookie;root
+2;Anubis;root
+2;Jennifer Lopez;root
+3;Hamlet;root
+3;Deeltjesversneller;root
+3;Aristocratie;root
+2;Oasis;root
+2;Ontsteking;root
+2;John Snow;root
+3;Bloedvergiftiging;root
+1;Haas;root
+2;Honkbal;root
+2;D�ner;root
+2;Jonas Brothers;Jasper
+2;Karnemelk;root
+1;Eenhoorn;root
+3;Joelia Tymosjenko;root
+2;Koffiezetapparaat;root
+1;Water;root
+2;Portugal;root
+3;Maria Magdalena;root
+2;Spar;root
+1;Jezus;root
+3;Boterbloem;root
+2;Lettergreep;root
+3;Klimop;root
+2;Robin Hood;root
+1;Potlood;root
+2;Vierkant;root
+2;Fahrenheit;root
+3;Adder;root
+1;Druif;root
+2;Wesley Sneijder;root
+1;Zwart;root
+2;Regenboog;root
+3;Obligatie;root
+1;Haan;root
+3;Komeet;root
+3;Darwin;root
+3;Arnhem;root
+2;Kathedraal;root
+3;Base;root
+3;Gouverneur;root
+3;Mandoline;root
+2;Barcelona;root
+2;Gladiator;root
+3;Casablanca;Jasper
+3;Psalmen;Jasper
+2;Saxofoon;Jasper
+1;Wayne Rooney;Jasper
+2;Steaua Boekarest;Jasper
+1;RSC Anderlecht;Jasper
+3;Goniometrie;Jasper
+2;Arda Turan;Jasper
+1;Homo;Jasper
+1;Tsjernobyl;Jasper
+3;Bobby Charlton;Jasper
+2;Aladdin;Jasper
+2;Camp Nou;Jasper
+1;One Direction;Jasper
+2;Gandhi;Jasper
+2;Netvlies;Jasper
+1;Dopamine;Jasper
+1;Tank;Jasper
+1;Charles Dickens;Jasper
+1;Placebo;Jasper
+2;Bottrop;Jasper
+1;Walt Disney;Jasper
+1;Twilight;Jasper
+2;Fulham FC;Jasper
+2;Florida;Jasper
+1;Pikachu;Jasper
+2;William Turner;Jasper
+3;Apollo 11;Jasper
+1;Emma Watson;Jasper
+1;Julius Caesar;Jasper
+2;Elektrische gitaar;Jasper
+1;Steve Jobs;Jasper
+2;Franz Beckenbauer;Jasper
+3;Legioen;Jasper
+2;Marco Reus;Jasper
+2;Autisme;Jasper
+3;Hans Zimmer;Jasper
+3;Joule;Jasper
+1;Grens;root
+1;Xbox 360;root
+3;Loki;root
+2;Das;root
+3;Atlas;root
+2;Times Square;root
+easy: 264 med: 452 hard: 268 total: 984
