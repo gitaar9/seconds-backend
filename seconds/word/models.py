@@ -1,3 +1,4 @@
+import csv
 from random import randint
 
 from django.db import models
@@ -19,7 +20,7 @@ class Word(models.Model):
         (DUTCH, 'Dutch'),
         (ENGLISH, 'English')
     ]
-    word = models.CharField(max_length=32, unique=True)
+    word = models.CharField(max_length=32)
     added_by = models.CharField(max_length=50, default='Thijs')
     difficulty = models.IntegerField(default=1)
     language = models.CharField(max_length=2, choices=LANGUAGES, default=DUTCH)
@@ -27,11 +28,14 @@ class Word(models.Model):
 
     objects = WordQuerySet.as_manager()
 
+    class Meta:
+        unique_together = ['word', 'language']
+
     @classmethod
     def load_words(cls):
-        with open('seconds/word/backup.txt', 'rb') as f:
-            for difficulty, word, created_by in map(lambda l: l.split(';'), f.read().decode('latin8').split('\n')):
-                w = cls.objects.create(word=word, difficulty=int(difficulty), language=Word.DUTCH, added_by=created_by)
+        with open('seconds/word/new_backup', 'rb') as f:
+            for difficulty, word, created_by, language in map(lambda l: l.split(';'), f.read().decode('latin8').split('\n')):
+                w = cls.objects.create(word=word, difficulty=int(difficulty), language=language, added_by=created_by)
                 print(w)
 
     @classmethod
@@ -85,12 +89,35 @@ class OptionalWord(models.Model):
         with open('seconds/word/optionalBackup.txt', 'rb') as f:
             try:
                 for word, _ in map(lambda l: l.split(';'), f.read().decode('latin8').split('\n')):
-                    if (not Word.objects.filter(word=word).exists()) and (not OptionalWord.objects.filter(word=word).exists()):
+                    if (not Word.objects.filter(word=word, language=Word.DUTCH).exists()) and (not OptionalWord.objects.filter(word=word).exists()):
                         w = cls.objects.create(word=word)
                         print(w)
                         total_words_added += 1
             except ValueError:
                 pass
+        print("Added a total of {} words".format(total_words_added))
+
+    def __str__(self):
+        return self.word
+
+
+class OptionalEnglishWord(models.Model):
+    word = models.CharField(max_length=32, unique=True)
+
+    class Meta:
+        ordering = ['-id']
+
+    @classmethod
+    def load_optional_english_nouns(cls):
+        total_words_added = 0
+        with open('seconds/word/english_words', 'r') as f:
+            reader = csv.DictReader(f, delimiter='\t')
+            for row in reader:
+                word = row['Word'].capitalize()
+                if row['Partofspeech'] == 'n' and (not Word.objects.filter(word=word, language=Word.ENGLISH).exists()):
+                    print(word)
+                    cls.objects.create(word=word)
+                    total_words_added += 1
         print("Added a total of {} words".format(total_words_added))
 
     def __str__(self):
