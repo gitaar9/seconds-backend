@@ -26,3 +26,17 @@ class User(AbstractUser):
     def averages(self):
         return "Explained {.2f}, guessed {.2f}".format((self.words_explained_correct / self.words_explained) * 5,
                                                        (self.words_guessed_correct / self.words_guessed) * 5)
+
+    @classmethod
+    def create_test_user(cls, username):
+        u, _ = User.objects.get_or_create(username=username)
+        u.set_password('wordpass')
+        u.save()
+
+        from seconds.game.models import PlayerInfo
+        try:
+            PlayerInfo.objects.get(user=u).game.delete()
+        except ObjectDoesNotExist:
+            pass
+
+        return u

@@ -48,6 +48,22 @@ class Game(models.Model):
             next_team = self.teams.order_by('pk').first()
         next_team.start_turn()
 
+    @classmethod
+    def create_test_game(cls, amount_of_teams=2, amount_of_players=4):
+        game = cls.objects.create()
+        teams = [Team.objects.create(game=game, name="Team " + str(nr), score=random.randint(0, 10)) for nr in range(amount_of_teams)]
+        users = [User.create_test_user("user" + str(nr)) for nr in range(amount_of_players)]
+
+        # divide the players equally over the teams
+        team_idx = 0
+        for cnt, user in enumerate(users):
+            if cnt % (amount_of_players / amount_of_teams) == 0:
+                team_idx += 1
+            PlayerInfo.objects.create(team=teams[team_idx - 1], user=user)
+
+        game.start_game()
+        return game
+
     def __str__(self):
         return ", ".join([str(t) for t in self.teams.all()])
 
