@@ -24,6 +24,7 @@ class Game(models.Model):
     ]
     state = models.CharField(max_length=3, choices=GAME_STATES, default=LOBBY)
     code = models.CharField(max_length=5, default=random_string)
+    language = models.CharField(max_length=2, choices=Word.LANGUAGES, default=Word.DUTCH)
 
     @property
     def players(self):
@@ -113,7 +114,7 @@ class PlayerInfo(models.Model):
     def start_reading_card(self):
         self.state = self.READING_CARD
         self.start_of_turn = timezone.now()
-        self.current_card = json.dumps(Word.get_card_as_json())
+        self.current_card = json.dumps(Word.get_card_as_json(self.game))
         self.save()
 
     def end_turn(self):

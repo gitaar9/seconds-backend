@@ -48,11 +48,12 @@ class TeamSerializer(serializers.ModelSerializer):
 
 class GameSerializer(serializers.ModelSerializer):
     queryset = Game.objects.prefetch_related(Prefetch('teams', queryset=Team.objects.order_by('id')))
-    teams = TeamSerializer(many=True)
+    teams = TeamSerializer(many=True, read_only=True)
 
     class Meta:
         model = Game
-        fields = ('code', 'teams', 'state')
+        fields = ('code', 'teams', 'state', 'language')
+        read_only_fields = ('code', 'state', 'teams')
 
 
 class CodeSerializer(serializers.Serializer):

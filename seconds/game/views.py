@@ -22,12 +22,29 @@ class GameViewSet(viewsets.GenericViewSet):
         serializer = self.get_serializer(instance=game)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
-    def list(self, request, *args, **kwargs):
+    def get_object(self):
         try:
-            serializer = self.get_serializer(instance=request.user.playerinfo.team.game)
-            return Response(serializer.data, status=status.HTTP_200_OK)
+            return self.request.user.game
         except ObjectDoesNotExist:
             raise Http404
+
+    def list(self, request, *args, **kwargs):
+        serializer = self.get_serializer(instance=self.get_object())
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+    @action(detail=False, methods=['patch'])
+    def update_game(self, request, *args, **kwargs):
+        instance = self.get_object()
+        serializer = self.get_serializer(instance, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+
+        if getattr(instance, '_prefetched_objects_cache', None):
+            # If 'prefetch_related' has been applied to a queryset, we need to
+            # forcibly invalidate the prefetch cache on the instance.
+            instance._prefetched_objects_cache = {}
+
+        return Response(serializer.data)
 
     @action(detail=False, methods=['delete'])
     def leave_game(self, request, *args, **kwargs):

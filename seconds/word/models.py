@@ -45,8 +45,8 @@ class Word(models.Model):
             f.writelines(lines)
 
     @classmethod
-    def get_card_as_json(cls):
-        all_words = Word.objects.all().order_by('last_used')
+    def get_card_as_json(cls, game):
+        all_words = Word.objects.filter(language=game.language).order_by('last_used')
         words_array = []
         used_word_ids = []
 
