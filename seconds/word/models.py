@@ -33,7 +33,7 @@ class Word(models.Model):
 
     @classmethod
     def load_words(cls):
-        with open('seconds/word/new_backup', 'rb') as f:
+        with open('seconds/word/new_backup_1448', 'rb') as f:
             for difficulty, word, created_by, language in map(lambda l: l.split(';'), f.read().decode('latin8').split('\n')):
                 w = cls.objects.create(word=word, difficulty=int(difficulty), language=language, added_by=created_by)
                 print(w)

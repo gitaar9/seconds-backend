@@ -161,3 +161,5 @@ CORS_ORIGIN_REGEX_WHITELIST = (
 )
 
 AUTH_USER_MODEL = 'user.User'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
