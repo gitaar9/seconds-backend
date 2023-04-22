@@ -15,6 +15,9 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# Change this when the ip changes, find on linux with ~/$ ip add
+# Also change in the seconds-frontend in the file seconds-frontend/src/environment/environment.ts
+SERVER_IP = '192.168.2.17'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -26,7 +29,7 @@ SECRET_KEY = '&@qq!w#(w1uai4syn-$ixpk7)#q)j8gt-lm0*-kvb^+ql@8!p4'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '192.168.1.99'
+    SERVER_IP
 ]
 
 
@@ -152,6 +155,7 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:4200',
     'https://192.168.1.99:4200',
     'http://192.168.1.99:4200',
+    f'http://{SERVER_IP}:4200',
 )
 CORS_ORIGIN_REGEX_WHITELIST = (
     'https://localhost:4200',

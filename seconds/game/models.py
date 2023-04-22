@@ -73,6 +73,7 @@ class Team(models.Model):
     game = models.ForeignKey(Game, on_delete=models.CASCADE, related_name='teams')
     currently_playing = models.BooleanField(default=False)
     score = models.IntegerField(default=0)
+    pion_filename = models.CharField(max_length=20, default='pion1.png')
 
     class Meta:
         ordering = ['-score']
@@ -84,7 +85,13 @@ class Team(models.Model):
             current_player.end_turn()
             next_player = self.players.filter(pk__gt=current_player.pk).order_by('pk').first() or self.players.order_by('pk').first()
         except ObjectDoesNotExist:
-            next_player = self.players.order_by('pk').first()
+            if self.players.exists():
+                next_player = self.players.order_by('pk').first()
+            else:
+                self.currently_playing = True
+                self.update_score(5, None)
+                self.game.next_turn()
+                return
 
         next_player.start_turn()
         self.currently_playing = True

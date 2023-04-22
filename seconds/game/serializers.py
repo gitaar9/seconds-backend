@@ -6,6 +6,7 @@ from django.http import Http404
 from django.utils import timezone
 from rest_framework import serializers
 
+from seconds.game.asset_filenames import pion_filenames_definition
 from seconds.game.models import Game, Team, PlayerInfo
 
 
@@ -35,11 +36,19 @@ class TeamSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Team
-        fields = ('players', 'name', 'id', 'score', 'currently_playing')
+        fields = ('players', 'name', 'id', 'score', 'currently_playing', 'pion_filename')
+
+    @staticmethod
+    def generate_new_pion_filename(game):
+        used_pion_filenames = game.teams.values_list('pion_filename', flat=True).all()
+        possible_pion_filenames = pion_filenames_definition.copy()
+        return [filename for filename in possible_pion_filenames if filename not in used_pion_filenames][0]
 
     def create(self, validated_data):
         try:
-            validated_data['game'] = self.context['request'].user.playerinfo.game
+            game = self.context['request'].user.playerinfo.game
+            validated_data['game'] = game
+            validated_data['pion_filename'] = self.generate_new_pion_filename(game)
             team = Team.objects.create(**validated_data)
             return team
         except ObjectDoesNotExist:

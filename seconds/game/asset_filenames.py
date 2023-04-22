@@ -1,0 +1,1 @@
+pion_filenames_definition = [f"pion{i}.png" for i in range(1, 7)]

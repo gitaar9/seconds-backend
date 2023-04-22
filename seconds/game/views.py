@@ -6,6 +6,7 @@ from rest_framework.generics import get_object_or_404
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
+from seconds.game.asset_filenames import pion_filenames_definition
 from seconds.game.models import Game, Team, PlayerInfo
 from seconds.game.serializers import GameSerializer, TeamSerializer, CodeSerializer, ScoreSerializer
 
@@ -17,7 +18,9 @@ class GameViewSet(viewsets.GenericViewSet):
     def create(self, request, *args, **kwargs):
         game = Game.objects.create()
         my_team = Team.objects.create(game=game)
-        Team.objects.create(game=game)
+        other_team = Team.objects.create(game=game)
+        other_team.pion_filename = pion_filenames_definition[1]
+        other_team.save()
         PlayerInfo.objects.create(team=my_team, user=request.user)
 
         serializer = self.get_serializer(instance=game)

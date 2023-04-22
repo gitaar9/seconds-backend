@@ -4,6 +4,7 @@ from random import randint
 from django.db import models
 from django.db.models.aggregates import Count
 from django.utils import timezone
+from django.db.utils import IntegrityError
 
 
 class WordQuerySet(models.QuerySet):
@@ -35,8 +36,11 @@ class Word(models.Model):
     def load_words(cls):
         with open('seconds/word/new_backup_1448', 'rb') as f:
             for difficulty, word, created_by, language in map(lambda l: l.split(';'), f.read().decode('latin8').split('\n')):
-                w = cls.objects.create(word=word, difficulty=int(difficulty), language=language, added_by=created_by)
-                print(w)
+                try:
+                    cls.objects.create(word=word, difficulty=int(difficulty), language=language, added_by=created_by)
+                    print(f"Added {word}")
+                except IntegrityError:
+                    print(f"Skipped {word}")
 
     @classmethod
     def backup_words(cls):
