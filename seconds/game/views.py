@@ -119,6 +119,9 @@ class GameViewSet(viewsets.GenericViewSet):
 
         if not (self.request.user.playerinfo.currently_playing and self.request.user.playerinfo.team.currently_playing):
             return Response({'error': "It's not your turn."}, status.HTTP_400_BAD_REQUEST)
+        my_player = self.request.user.playerinfo
+        if not my_player.state == PlayerInfo.READING_CARD:
+            return Response({'error': "First retrieve your card."}, status.HTTP_400_BAD_REQUEST)
 
         self.request.user.playerinfo.team.update_score(serializer.validated_data['score'], self.request.user)
         self.request.user.game.next_turn()

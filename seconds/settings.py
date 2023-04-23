@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
 
 # Application definition
 INSTALLED_APPS = [
+    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'seconds.word',
     'seconds.user',
+    'seconds.chat',
     'seconds.game'
 ]
 
@@ -79,7 +81,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'seconds.wsgi.application'
-
+ASGI_APPLICATION = "seconds.asgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
