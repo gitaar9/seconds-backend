@@ -23,7 +23,7 @@ def serialize_game(game):
     ).data
 
 
-class ChatConsumer(AsyncWebsocketConsumer):
+class GameUpdatesConsumer(AsyncWebsocketConsumer):
     @staticmethod
     @database_sync_to_async
     def get_user_game_json(user):

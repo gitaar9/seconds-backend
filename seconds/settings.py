@@ -166,6 +166,8 @@ CORS_ORIGIN_WHITELIST = (
     'https://192.168.1.99:4200',
     'http://192.168.1.99:4200',
     f'http://{SERVER_IP}:4200',
+    f'http://{SERVER_IP}:8080',
+    f'http://{SERVER_IP}:80',
 )
 CORS_ORIGIN_REGEX_WHITELIST = (
     'https://localhost:4200',
