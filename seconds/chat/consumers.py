@@ -42,7 +42,7 @@ class GameUpdatesConsumer(AsyncWebsocketConsumer):
                 return
 
         self.room_name = 'main'
-        self.room_group_name = 'dummy'
+        self.room_group_name = game_code
 
         # Join room group
         await self.channel_layer.group_add(
