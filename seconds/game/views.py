@@ -71,7 +71,8 @@ class GameViewSet(viewsets.GenericViewSet):
     @action(detail=False, methods=['delete'])
     def leave_game(self, request, *args, **kwargs):
         try:
-            if request.user.game.players.count() == 1 and request.user.game.players.first().user == request.user:
+            if request.user.in_game and request.user.game.players.count() == 1 and \
+                    request.user.game.players.first().user == request.user:
                 request.user.game.delete()
             request.user.playerinfo.delete()
         except ObjectDoesNotExist:

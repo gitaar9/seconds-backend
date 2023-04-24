@@ -6,6 +6,10 @@ services:
     network_mode: "host"
     environment:
       - POSTGRES_HOST_AUTH_METHOD=trust
+  redis:
+    image: redis:5
+    ports:
+      - "6379:6379"
   web:
     build: .
     command: python3 manage.py runserver 0.0.0.0:8000
