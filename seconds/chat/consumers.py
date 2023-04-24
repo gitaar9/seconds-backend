@@ -37,10 +37,12 @@ class GameUpdatesConsumer(AsyncWebsocketConsumer):
             if self.scope['game_code'] is not None:
                 game_code = self.scope['game_code']
             else:
+                self.room_name = 'main'
+                self.room_group_name = 'dummy'
                 return
 
         self.room_name = 'main'
-        self.room_group_name = game_code
+        self.room_group_name = 'dummy'
 
         # Join room group
         await self.channel_layer.group_add(
