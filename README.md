@@ -14,6 +14,11 @@ Then inside shell
 from seconds.word.models import Word
 Word.load_words()
 
+And possibly:
+from seconds.word.models import OptionalEnglishWord, OptionalWord
+OptionalWord.load_optional_words()
+OptionalEnglishWord.load_optional_english_nouns()
+
 Go to localhost:8000/admin/
 and create an Application with:
 client_id = 1

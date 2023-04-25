@@ -92,7 +92,7 @@ class OptionalWord(models.Model):
         total_words_added = 0
         with open('seconds/word/optionalBackup.txt', 'rb') as f:
             try:
-                for word, _ in map(lambda l: l.split(';'), f.read().decode('latin8').split('\n')):
+                for word, _ in map(lambda l: l.split(';'), f.read().decode('latin8').split('\n')[1000:]):
                     if (not Word.objects.filter(word=word, language=Word.DUTCH).exists()) and (not OptionalWord.objects.filter(word=word).exists()):
                         w = cls.objects.create(word=word)
                         print(w)
@@ -116,7 +116,9 @@ class OptionalEnglishWord(models.Model):
         total_words_added = 0
         with open('seconds/word/english_words', 'r') as f:
             reader = csv.DictReader(f, delimiter='\t')
-            for row in reader:
+            for idx, row in enumerate(reader):
+                if idx < 250 or idx > 2200:
+                    continue
                 word = row['Word'].capitalize()
                 if row['Partofspeech'] == 'n' and (not Word.objects.filter(word=word, language=Word.ENGLISH).exists()):
                     print(word)
