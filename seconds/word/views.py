@@ -48,6 +48,13 @@ class WordViewSet(viewsets.ModelViewSet):
         }
         return Response(statistics_dict, status=status.HTTP_200_OK)
 
+    @action(detail=False, methods=['get'])
+    def get_ten_last_used(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        instances = queryset.order_by('-last_used')[:10]
+        serializer = self.get_serializer(instances, many=True)
+        return Response(serializer.data)
+
 
 class OptionalWordViewSet(ReadOnlyModelViewSet):
     permission_classes = (IsAdminUser, )
