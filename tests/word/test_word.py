@@ -30,7 +30,6 @@ class WordsTests(FiveWordsAPITestCase):
 
         # Normal player cant see this
         url = reverse('word-get-ten-last-used')
-        print(url)
         response = self.client.get(url, {}, format='json')
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN, response.data)
 

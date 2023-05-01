@@ -1,4 +1,6 @@
 import csv
+import datetime
+import random
 from random import randint
 
 from django.db import models
@@ -34,6 +36,7 @@ class Word(models.Model):
 
     @classmethod
     def load_words(cls):
+        # Load the words
         with open('seconds/word/new_backup_2268', 'rb') as f:
             for difficulty, word, created_by, language in map(lambda l: l.split(';'), f.read().decode('latin8').split('\n')):
                 try:
@@ -41,6 +44,10 @@ class Word(models.Model):
                     print(f"Added {word}")
                 except (IntegrityError, DataError):
                     print(f"Skipped {word}")
+        # Make sure the cards will be read in random order
+        now = timezone.now()
+        for word in Word.objects.all():
+            word.last_used = now - datetime.timedelta(seconds=random.randint(0, 86400))  # Some time in the past day
 
     @classmethod
     def backup_words(cls):
