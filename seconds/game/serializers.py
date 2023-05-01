@@ -13,12 +13,11 @@ from seconds.game.models import Game, Team, PlayerInfo
 class PlayerInfoSerializer(serializers.ModelSerializer):
     username = serializers.CharField(source='user.username')
     is_me = serializers.SerializerMethodField()
-    time_left = serializers.SerializerMethodField()
     card = serializers.SerializerMethodField()
 
     class Meta:
         model = PlayerInfo
-        fields = ('username', 'is_me', 'currently_playing', 'state', 'time_left', 'card')
+        fields = ('username', 'is_me', 'currently_playing', 'state', 'card', 'start_of_turn')
 
     def get_is_me(self, obj):
         return self.context['request'].user == obj.user
