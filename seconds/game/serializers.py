@@ -1,4 +1,5 @@
 import json
+import random
 
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Prefetch
@@ -41,7 +42,8 @@ class TeamSerializer(serializers.ModelSerializer):
     def generate_new_pion_filename(game):
         used_pion_filenames = game.teams.values_list('pion_filename', flat=True).all()
         possible_pion_filenames = pion_filenames_definition.copy()
-        return [filename for filename in possible_pion_filenames if filename not in used_pion_filenames][0]
+        unused_filenames = [filename for filename in possible_pion_filenames if filename not in used_pion_filenames]
+        return unused_filenames[0] if unused_filenames else random.choice(possible_pion_filenames)
 
     def create(self, validated_data):
         try:

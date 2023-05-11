@@ -73,7 +73,7 @@ class Team(models.Model):
     game = models.ForeignKey(Game, on_delete=models.CASCADE, related_name='teams')
     currently_playing = models.BooleanField(default=False)
     score = models.IntegerField(default=0)
-    pion_filename = models.CharField(max_length=20, default='pion1.png')
+    pion_filename = models.CharField(max_length=20, default='blue')
 
     class Meta:
         ordering = ['-score']
