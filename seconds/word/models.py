@@ -52,6 +52,7 @@ class Word(models.Model):
         random.seed(str(now))
         for word in Word.objects.all():
             word.last_used = now - datetime.timedelta(seconds=random.randint(0, 86400))  # Some time in the past day
+            word.save()
 
     @classmethod
     def backup_words(cls):
