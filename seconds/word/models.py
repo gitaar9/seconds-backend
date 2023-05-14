@@ -42,9 +42,10 @@ class Word(models.Model):
                 try:
                     cls.objects.create(word=word, difficulty=int(difficulty), language=language, added_by=created_by)
                     print(f"Added {word}")
-                except (IntegrityError, DataError):
+                except (IntegrityError, DataError, ValueError):
                     print(f"Skipped {word}")
         # Make sure the cards will be read in random order
+        random.seed(timezone.now())
         now = timezone.now()
         for word in Word.objects.all():
             word.last_used = now - datetime.timedelta(seconds=random.randint(0, 86400))  # Some time in the past day
@@ -61,20 +62,33 @@ class Word(models.Model):
         words_array = []
         used_word_ids = []
 
+        if game.difficulty == game.EASY:
+            num_easy_words = 2
+            num_medium_words = 3
+            num_hard_words = 0
+        elif game.difficulty == game.MEDIUM:
+            num_easy_words = 1
+            num_medium_words = 3
+            num_hard_words = 1
+        else:
+            num_easy_words = 0
+            num_medium_words = 3
+            num_hard_words = 2
+
         # Easy word
-        word = all_words.filter(difficulty=1).first()
-        words_array.append(word.word)
-        used_word_ids.append(word.pk)
+        words = all_words.filter(difficulty=1)[:num_easy_words]
+        words_array.extend([w.word for w in words])
+        used_word_ids.extend([w.pk for w in words])
 
         # Medium words
-        words = all_words.filter(difficulty=2)[:3]
+        words = all_words.filter(difficulty=2)[:num_medium_words]
         words_array.extend([w.word for w in words])
         used_word_ids.extend([w.pk for w in words])
 
         # Hard word
-        word = all_words.filter(difficulty=3).first()
-        words_array.append(word.word)
-        used_word_ids.append(word.pk)
+        words = all_words.filter(difficulty=3)[:num_hard_words]
+        words_array.extend([w.word for w in words])
+        used_word_ids.extend([w.pk for w in words])
 
         # Update the last used of the words picked
         Word.objects.filter(pk__in=used_word_ids).update(last_used=timezone.now())

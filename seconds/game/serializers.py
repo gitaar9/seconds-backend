@@ -62,7 +62,7 @@ class GameSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Game
-        fields = ('code', 'teams', 'state', 'language')
+        fields = ('code', 'teams', 'state', 'language', 'difficulty')
         read_only_fields = ('code', 'state', 'teams')
 
 

@@ -29,7 +29,8 @@ SECRET_KEY = '&@qq!w#(w1uai4syn-$ixpk7)#q)j8gt-lm0*-kvb^+ql@8!p4'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    SERVER_IP
+    SERVER_IP,
+    '127.0.0.1'
 ]
 
 
@@ -169,12 +170,16 @@ CORS_ORIGIN_WHITELIST = (
     f'http://{SERVER_IP}:8080',
     f'http://{SERVER_IP}:80',
     f'http://{SERVER_IP}',
+    'http://127.0.0.1:8000',
+    'http://127.0.0.1',
 )
 CORS_ORIGIN_REGEX_WHITELIST = (
     'https://localhost:4200',
     'http://localhost:4200',
     'https://192.168.1.99:4200',
     'http://192.168.1.99:4200',
+    'http://127.0.0.1:8000',
+    'http://127.0.0.1',
 )
 
 AUTH_USER_MODEL = 'user.User'

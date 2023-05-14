@@ -22,7 +22,16 @@ class Game(models.Model):
         (PLAYING, 'Playing'),
         (ENDED, 'Ended'),
     ]
+    EASY = 'EAS'
+    MEDIUM = 'MED'
+    HARD = 'HAR'
+    DIFFICULTIES = [
+        (EASY, 'Easy'),
+        (MEDIUM, 'Medium'),
+        (HARD, 'Hard'),
+    ]
     state = models.CharField(max_length=3, choices=GAME_STATES, default=LOBBY)
+    difficulty = models.CharField(max_length=3, choices=DIFFICULTIES, default=MEDIUM)
     code = models.CharField(max_length=5, default=random_string)
     language = models.CharField(max_length=2, choices=Word.LANGUAGES, default=Word.DUTCH)
 
@@ -88,9 +97,10 @@ class Team(models.Model):
             if self.players.exists():
                 next_player = self.players.order_by('pk').first()
             else:
-                self.currently_playing = True
-                self.update_score(5, None)
-                self.game.next_turn()
+                if self.game.state == Game.PLAYING:
+                    self.currently_playing = True
+                    self.update_score(1, None)
+                    self.game.next_turn()
                 return
 
         next_player.start_turn()
