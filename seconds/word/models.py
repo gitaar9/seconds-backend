@@ -48,8 +48,8 @@ class Word(models.Model):
             except ValueError:
                 print('Last line was empty but we caught to error.')
         # Make sure the cards will be read in random order
-        random.seed(timezone.now())
         now = timezone.now()
+        random.seed(str(now))
         for word in Word.objects.all():
             word.last_used = now - datetime.timedelta(seconds=random.randint(0, 86400))  # Some time in the past day
 
