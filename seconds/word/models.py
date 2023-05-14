@@ -38,12 +38,15 @@ class Word(models.Model):
     def load_words(cls):
         # Load the words
         with open('seconds/word/new_backup_2268', 'rb') as f:
-            for difficulty, word, created_by, language in map(lambda l: l.split(';'), f.read().decode('latin8').split('\n')):
-                try:
-                    cls.objects.create(word=word, difficulty=int(difficulty), language=language, added_by=created_by)
-                    print(f"Added {word}")
-                except (IntegrityError, DataError, ValueError):
-                    print(f"Skipped {word}")
+            try:
+                for difficulty, word, created_by, language in map(lambda l: l.split(';'), f.read().decode('latin8').split('\n')):
+                    try:
+                        cls.objects.create(word=word, difficulty=int(difficulty), language=language, added_by=created_by)
+                        print(f"Added {word}")
+                    except (IntegrityError, DataError):
+                        print(f"Skipped {word}")
+            except ValueError:
+                print('Last line was empty but we caught to error.')
         # Make sure the cards will be read in random order
         random.seed(timezone.now())
         now = timezone.now()
