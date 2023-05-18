@@ -9,6 +9,7 @@ services:
       - "5432:5432"
   redis:
     image: redis:5
+    command: redis-server --requirepass afs][pdgka[ojgah
     ports:
       - "6379:6379"
   web:
