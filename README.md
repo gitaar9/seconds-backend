@@ -31,13 +31,19 @@ client_secret = 2
 # How to deploy
 install docker: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04
 
-mkdir /djano
-cd /djano
+mkdir /projects
+cd /projects
 git clone https://github.com/gitaar9/seconds-backend.git
+git clone https://github.com/gitaar9/seconds-frontend.git
 sudo ufw allow 8000
 
 vim seconds/settings.py
 and change
     1. secret key
-    2. ip to 209.38.229.236
+    2. ip to right ip
     3. debug to False
+
+
+# For frontend
+scp -r /samsung_hdd/Files/Projects/seconds-frontend/dist root@$ip:/projects/seconds-frontend
+run make up in the nginx_docker folder
